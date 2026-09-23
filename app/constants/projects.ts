@@ -25,7 +25,6 @@ export const PROJECTS: Project[] = [
     title: 'Stable Diffusion Image Gen',
     date: '2024',
     subtext: 'Gradio-powered Stable Diffusion v1.5 generator with 5 schedulers and auto GPU/CPU device detection.',
-    url: 'https://github.com/heyy-elegent/Text_to_image_project',
   },
   {
     title: 'Weather App',

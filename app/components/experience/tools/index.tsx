@@ -1,6 +1,4 @@
 ﻿import { Text } from "@react-three/drei";
-import { isMobile } from "react-device-detect";
-import * as THREE from "three";
 
 type Skill = { text: string; y: number; size: number };
 
