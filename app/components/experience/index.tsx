@@ -81,14 +81,14 @@ const Experience = () => {
             id="tools"
             color='#9fd6c3'
             textAlign='right'
-            position={new THREE.Vector3(isMobile ? 1 : 2, 0, isMobile ? -5 : -7)}>
+            position={new THREE.Vector3(isMobile ? 1 : 2, isMobile ? -2.2 : -3, 0)}>
             <Tools/>
           </GridTile>
           <GridTile title='ABOUT ME'
             id="about"
             color='#e9c98a'
             textAlign='left'
-            position={new THREE.Vector3(isMobile ? -1 : -2, 0, isMobile ? -5 : -7)}>
+            position={new THREE.Vector3(isMobile ? -1 : -2, isMobile ? -2.2 : -3, 0)}>
             <About/>
           </GridTile>
         </group>
