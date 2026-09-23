@@ -7,6 +7,8 @@ import * as THREE from 'three';
 import GridTile from "./GridTile";
 import Projects from "./projects";
 import Work from "./work";
+import About from "./about";
+import Tools from "./tools";
 
 const Experience = () => {
   const titleRef = useRef<THREE.Group>(null);
@@ -74,6 +76,20 @@ const Experience = () => {
             textAlign='right'
             position={new THREE.Vector3(isMobile ? 1 : 2, 0, 0)}>
             <Projects/>
+          </GridTile>
+          <GridTile title='TECH STACK &amp; TOOLS'
+            id="tools"
+            color='#9fd6c3'
+            textAlign='right'
+            position={new THREE.Vector3(isMobile ? 1 : 2, 0, isMobile ? -5 : -7)}>
+            <Tools/>
+          </GridTile>
+          <GridTile title='ABOUT ME'
+            id="about"
+            color='#e9c98a'
+            textAlign='left'
+            position={new THREE.Vector3(isMobile ? -1 : -2, 0, isMobile ? -5 : -7)}>
+            <About/>
           </GridTile>
         </group>
       </group>
