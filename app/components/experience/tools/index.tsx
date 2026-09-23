@@ -1,37 +1,64 @@
-﻿import { Text } from "@react-three/drei";
+﻿import { Edges, Text } from "@react-three/drei";
 
-type Skill = { text: string; y: number; size: number };
+const Tools = () => {
+  const cardWidth = 4.2;
+  const cardHeight = 3.9;
+  const cardCenterY = 0.3;
+  const pitch = 0.5;
 
-const SkillLines: Skill[] = [
-  { text: "LANGUAGES & DATA", y: 1.1, size: 0.22 },
-  { text: "JavaScript, TypeScript, Python, C++, SQL", y: 0.8, size: 0.16 },
-  { text: "FRONTEND & WEB", y: 0.42, size: 0.22 },
-  { text: "React, Next.js, Three.js, GSAP, TailwindCSS", y: 0.12, size: 0.16 },
-  { text: "BACKEND & DATABASES", y: -0.26, size: 0.22 },
-  { text: "Node.js, Express, MongoDB, MySQL, Firebase", y: -0.56, size: 0.16 },
-  { text: "AI/ML & GEN-AI", y: -0.94, size: 0.22 },
-  { text: "PyTorch, TensorFlow, scikit-learn, LangChain", y: -1.24, size: 0.16 },
-  { text: "TOOLS & 3D", y: -1.62, size: 0.22 },
-  { text: "Git, Docker, VS Code, Blender, Vercel", y: -1.92, size: 0.16 },
-];
+  const skillGroups: { title: string; items: string }[] = [
+    { title: "LANGUAGES", items: "TypeScript · JavaScript · Python · Java · C++" },
+    { title: "FRONTEND", items: "React · Next.js · Tailwind · Three.js · GSAP" },
+    { title: "BACKEND", items: "Node.js · Express · FastAPI · PostgreSQL · Redis" },
+    { title: "ML / AI", items: "PyTorch · TensorFlow · OpenCV · HuggingFace" },
+    { title: "TOOLS", items: "Git · Docker · Firebase · Vercel · GitHub Pages" },
+  ];
 
-const Tools = () => (
-  <group>
-    {SkillLines.map((line, i) => (
+  const startY = cardCenterY + cardHeight / 2 - 0.45;
+
+  return (
+    <group>
+      <mesh position={[0, cardCenterY, 0]}>
+        <planeGeometry args={[cardWidth, cardHeight, 1]} />
+        <meshBasicMaterial color="#FFF" transparent opacity={0.85} />
+        <Edges color="black" lineWidth={2} />
+      </mesh>
+
       <Text
-        key={i}
         font="./soria-font.ttf"
-        fontSize={line.size}
-        color="white"
-        maxWidth={3.4}
-        position={[0, line.y, 0]}
-        textAlign="center"
-      >
-        {line.text}
+        color="black"
+        anchorX="left"
+        anchorY="top"
+        fontSize={0.48}
+        position={[-1.9, startY, 0.01]}>
+        TECH STACK &amp; TOOLS
       </Text>
-    ))}
-  </group>
-);
+
+      {skillGroups.map((group, i) => (
+        <group key={group.title}>
+          <Text
+            font="./Vercetti-Regular.woff"
+            color="#222"
+            anchorX="left"
+            anchorY="top"
+            fontSize={0.2}
+            position={[-1.9, startY - 0.7 - i * pitch, 0.02]}>
+            {group.title}
+          </Text>
+          <Text
+            font="./Vercetti-Regular.woff"
+            color="#555"
+            anchorX="left"
+            anchorY="top"
+            maxWidth={cardWidth - 0.4}
+            fontSize={0.18}
+            position={[-1.9, startY - 0.94 - i * pitch, 0.03]}>
+            {group.items}
+          </Text>
+        </group>
+      ))}
+    </group>
+  );
+};
 
 export default Tools;
-
