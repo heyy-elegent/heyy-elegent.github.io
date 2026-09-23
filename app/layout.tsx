@@ -14,13 +14,13 @@ const vercettiFont = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com/'),
-  title: "Mohit Virli ✌️",
-  description: "A frontend developer by profession, a creative at heart.",
-  keywords: "Mohit Virli, Frontend Engineer, React Developer, Three.js, Creative Developer, Web Development, Angular, JavaScript, TypeScript, Portfolio",
-  authors: [{ name: "Mohit Virli" }],
-  creator: "Mohit Virli",
-  publisher: "Mohit Virli",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://heyy-elegent.github.io/'),
+  title: "Lalit Kumar ✌️",
+  description: "Full Stack & AI/ML Engineer who turns complex problems into clean, intelligent code.",
+  keywords: "Lalit Kumar, Full Stack Developer, AI ML Engineer, Deep Learning, React, Node.js, Three.js, Creative Developer, Web Development, Python, PyTorch, Portfolio",
+  authors: [{ name: "Lalit Kumar" }],
+  creator: "Lalit Kumar",
+  publisher: "Lalit Kumar",
   formatDetection: {
     email: false,
     address: false,
@@ -37,19 +37,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Mohit Virli - Frontend Engineer",
-    description: "Frontend engineer by profession, creative at heart.",
-    siteName: "Mohit Virli's Portfolio",
+    title: "Lalit Kumar - Full Stack & AI/ML Engineer",
+    description: "Full Stack & AI/ML Engineer. Like a Rubik's Cube, every complex problem has an elegant solution.",
+    siteName: "Lalit Kumar's Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohit Virli - Frontend Engineer",
-    description: "Frontend engineer by profession, creative at heart.",
-  },
-  verification: {
-    google: "GsRYY-ivL0F_VKkfs5KAeToliqz0gCrRAJKKmFkAxBA",
+    title: "Lalit Kumar - Full Stack & AI/ML Engineer",
+    description: "Full Stack & AI/ML Engineer. Like a Rubik's Cube, every complex problem has an elegant solution.",
   },
 };
 

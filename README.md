@@ -1,11 +1,10 @@
-# mohitvirli.github.io
-Hello there! I'm Mohit Virli, frontend engineer by profession, a creative at heart.
+# heyy-elegent.github.io
 
-This is the updated version of my personal website which is now in 3D. LFG!
+Hello there! I'm Lalit Kumar, full stack & AI/ML engineer, creative at heart.
 
-Checkout the live version at [https://clevir.li/](https://clevir.li/)
+This is my 3D interactive portfolio, built on the WebGL-based template from clevir.li — a scroll-driven experience rendered with React-three-fiber.
 
-> Note: this repository is also used as a template. If you want to deploy your own custom domain, set `GH_PAGES_CUSTOM_DOMAIN` in the workflow and the build will generate `public/CNAME` automatically. Use `NEXT_PUBLIC_GA_ID` to enable Google Analytics tracking. Otherwise, leave the custom domain env unset and the repo will continue to work as a GitHub Pages site.
+Checkout the live version at [https://heyy-elegent.github.io/](https://heyy-elegent.github.io/)
 
 ## Tech Stack
 
@@ -17,12 +16,11 @@ Checkout the live version at [https://clevir.li/](https://clevir.li/)
 - Zustand
 - Tailwind
 
-## Preview
-Some of the sample images from the app. Better to check it out live!
+## Features
 
-<img width="1242" alt="image" src="https://github.com/user-attachments/assets/877b0685-8d86-4f8b-b123-f3cc17d46fc7" />
-<img width="1241" alt="image" src="https://github.com/user-attachments/assets/09a92647-1781-4124-ba3f-1d6fb66f6974" />
-<img width="1241" alt="image" src="https://github.com/user-attachments/assets/a15017f4-f1f2-459e-b895-b3c14703635b" />
-<img width="1428" height="830" alt="image" src="https://github.com/user-attachments/assets/9f78c2e8-991c-4507-8ffb-72e61513c031" />
-
-
+- 3D hero with a live window-pane label that cycles through my roles
+- Scroll-driven camera journey (scroll → pan through projects & education)
+- GSAP-powered reveal, magnetic & hover animations
+- Mesh portal navigation for Projects and Education timelines
+- Theme toggle, preloader with progress ring
+- Mobile-friendly with touch pan controls

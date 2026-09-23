@@ -2,33 +2,27 @@ import { FooterLink } from "../types";
 
 export const FOOTER_LINKS: FooterLink[] = [
   {
-    name: 'LinkedIn',
-    hoverText: 'Connect with me',
-    icon: 'icons/linkedin.svg',
-    url: 'https://www.linkedin.com/in/mohit-virli-4780b6112/',
-  },
-  {
     name: 'GitHub',
-    hoverText: 'Open Sourcing',
+    hoverText: 'Open Source',
     icon: 'icons/github.svg',
-    url: 'https://github.com/mohitvirli',
+    url: 'https://github.com/codeby-Lalit',
   },
   {
-    name: 'Spotify',
-    hoverText: 'Curated playlists',
-    icon: 'icons/spotify.svg',
-    url: 'https://open.spotify.com/user/21hr4w2hzp4ceidewwsb4bxoy',
+    name: 'LinkedIn',
+    hoverText: 'Let\'s connect',
+    icon: 'icons/linkedin.svg',
+    url: 'https://www.linkedin.com/in/lalit-kushwaha-dev',
   },
   {
-    name: 'Instagram',
-    hoverText: '@clevirli',
-    icon: 'icons/instagram.svg',
-    url: 'https://www.instagram.com/clevirli/',
+    name: 'LeetCode',
+    hoverText: 'DSA grind',
+    icon: 'icons/github.svg',
+    url: 'https://leetcode.com/u/lalit__kushwaha/',
   },
   {
-    name: 'Resume',
-    hoverText: 'Download',
+    name: 'Email',
+    hoverText: 'Say hi',
     icon: 'icons/file.svg',
-    url: './Mohit Virli - Resume.pdf',
+    url: 'mailto:L4kushwaha@gmail.com',
   }
 ];
