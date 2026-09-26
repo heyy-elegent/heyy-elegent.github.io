@@ -8,6 +8,8 @@ export interface Project {
   date: string;
   subtext: string;
   url?: string;
+  github?: string;
+  tech?: string[];
   urls?: ProjectUrl[];
   featured?: boolean;
 }

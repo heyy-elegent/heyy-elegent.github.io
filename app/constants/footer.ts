@@ -2,6 +2,12 @@ import { FooterLink } from "../types";
 
 export const FOOTER_LINKS: FooterLink[] = [
   {
+    name: 'Resume',
+    hoverText: 'Download PDF',
+    icon: 'icons/file.svg',
+    url: '/resume.pdf',
+  },
+  {
     name: 'GitHub',
     hoverText: 'Open Source',
     icon: 'icons/github.svg',
